@@ -1,0 +1,12 @@
+{
+  "goal": "Implement reusable inventory filtering logic for the successor API task.",
+  "changed_files": [
+    "src/inventory/catalog.py",
+    "src/inventory/models.py",
+    "tests/test_catalog.py"
+  ],
+  "verification": "Ran pytest. The catalog tests in tests/test_catalog.py pass.",
+  "unfinished_items": "The filtering logic is not exposed through src/inventory/api.py yet. API parameter combinations are not tested yet.",
+  "next_steps": "Implement inventory.api.search_items(query, items=None), convert Item objects to plain dictionaries for API clients, validate numeric price query values, and add or satisfy API-level tests."
+}
+

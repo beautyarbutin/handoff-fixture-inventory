@@ -1,0 +1,12 @@
+{
+  "goal": "Implement reusable inventory filtering logic for the successor API task.",
+  "changed_files": [
+    "src/inventory/catalog.py",
+    "src/inventory/models.py",
+    "tests/test_catalog.py"
+  ],
+  "unfinished_items": "The filtering logic is not exposed through src/inventory/api.py yet. API parameter combinations are not tested yet.",
+  "risks": "Do not reimplement a second filtering algorithm in api.py. Reuse inventory.catalog.filter_items. Category matching must remain case-insensitive. min_price and max_price are inclusive bounds. Unknown query keys should be ignored.",
+  "next_steps": "Implement inventory.api.search_items(query, items=None), convert Item objects to plain dictionaries for API clients, validate numeric price query values, and add or satisfy API-level tests."
+}
+

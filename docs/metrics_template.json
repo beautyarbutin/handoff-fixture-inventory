@@ -1,0 +1,16 @@
+{
+  "experiment_arm": "",
+  "run": 1,
+  "agent": "codex",
+  "completed": false,
+  "tests_passed": false,
+  "accuracy_score": 0,
+  "accuracy_total": 5,
+  "prompt_tokens_estimated": 0,
+  "token_input": null,
+  "token_output": null,
+  "redispatch_count": 0,
+  "human_intervention_minutes": 0,
+  "notes": ""
+}
+
